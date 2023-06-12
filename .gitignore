@@ -1,0 +1,6 @@
+*.pyc
+*__pycache__
+notebooks/*
+datasets/*
+signature_centerize_data/*
+*.yaml

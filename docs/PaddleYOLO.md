@@ -96,3 +96,13 @@ $ pip install .
        :::info
        必須確保 `label_list.txt` 檔案中的類別名稱與 `xxx.xml` 檔案中的類別名稱是一致的。
        :::
+
+3. **執行指令**
+   ```
+   python tools/train.py -c <config_file> --eval --amp 
+   ```
+   + **config_file**: 模型對應的配置文件。
+   ```
+   python -u tools/infer.py -c <config_file> \
+              -o use_gpu=true weights=<xxx.pdparams> --infer_img=<img_path>
+   ```

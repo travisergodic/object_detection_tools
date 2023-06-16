@@ -115,3 +115,14 @@
    │   │   ├── trainval.txt
    │   │   ├── test.txt
    ```
+
+4. **產生 PaddleDetection 訓練 VOC 格式數據集要用到的 `trainval.txt` & `test.txt`**
+   ```
+   python create_paddle_voc_list.py --voc_folder <voc_folder> \
+                      --img_suffix_list <img_suffix_list> \
+                      --root <root>
+   ```
+   需要事先準備好 `VOCdevkit`
+   + **voc_folder**: Path to VOCdevkit folder.
+   + **img_suffix_list**: image suffixs.
+   + **root**: Output directory of `trainval.txt` and `test.txt`.

@@ -36,7 +36,7 @@
    + **having_annotations**: Ignore all images without annotations. Keep only these with at least one annotation.
    + **multiclass**: Split a multi-class dataset while preserving class distributions in train and test sets. 
    + **img_folder**: Path to image folder.
-   + **root**: directory for split coco folder.
+   + **root**: Directory to split coco folder.
 
    ```
    coco
@@ -44,7 +44,11 @@
    │   ├── instances_train2017.json
    │   ├── instances_val2017.json
    ├── train2017
+   │   ├── xxx.<ext>
+   │   ├── xxx.<ext>
    ├── val2017
+   │   ├── xxx.<ext>
+   │   ├── xxx.<ext>
    ```
 
 2. **分割 YOLO 數據集**
@@ -59,7 +63,7 @@
    + **anno_folder**: Path to yolo annotation folder.
    + **img_suffix_list**: Image suffixs.
    + **train_ratio**: A percentage of a split; a number in (0, 1).
-   + **root**: Directory for split yolo folder.
+   + **root**: Directory to split yolo folder.
 
    ```
    train
@@ -94,7 +98,7 @@
    + **anno_folder**: Path to xml annotation folder.
    + **img_suffix_list**: image suffixs.
    + **train_ratio**: A percentage of a split; a number in (0, 1).
-   + **root**: Directory for split yolo folder.
+   + **root**: Directory to split yolo folder.
 
    ```
    VOC2007
